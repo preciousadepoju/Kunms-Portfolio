@@ -7,7 +7,7 @@ function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Kunms
+            <a href="/">Kunms</a>
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
