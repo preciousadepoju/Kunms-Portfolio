@@ -127,7 +127,7 @@ function ExperienceSection() {
                 <h3 className="text-2xl font-bold text-white mb-2">Listing Partner</h3>
                 <h4 className="text-xl text-gray-400 font-semibold">BitMart Exchange</h4>
               </div>
-              <div className="text-gray-400 font-semibold text-lg">2025</div>
+              <div className="text-gray-400 font-semibold text-lg">2025 - Present</div>
             </div>
             <p className="text-gray-200 leading-relaxed">
               Working with BitMart Exchange to support listings, drive exposure for new tokens, and expand their global reach in crypto markets.
