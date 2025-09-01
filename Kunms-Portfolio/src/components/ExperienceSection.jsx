@@ -133,6 +133,32 @@ function ExperienceSection() {
               Working with BitMart Exchange to support listings, drive exposure for new tokens, and expand their global reach in crypto markets.
             </p>
           </div>
+          {/* Zybrafi */}
+          <div className="bg-gradient-to-r from-black/70 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-gray-400 transition-all duration-300">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">KOL</h3>
+                <h4 className="text-xl text-gray-400 font-semibold">Zybrafi</h4>
+              </div>
+              <div className="text-gray-400 font-semibold text-lg">2025</div>
+            </div>
+            <p className="text-gray-200 leading-relaxed">
+            Worked as a Key Opinion Leader, driving brand awareness, building community trust, and amplifying project visibility through strategic content and engagement.
+            </p>
+          </div>
+          {/* Munia Protocol */}
+          <div className="bg-gradient-to-r from-black/70 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-gray-400 transition-all duration-300">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">BD</h3>
+                <h4 className="text-xl text-gray-400 font-semibold">Munia Protocol</h4>
+              </div>
+              <div className="text-gray-400 font-semibold text-lg">2025 - Present</div>
+            </div>
+            <p className="text-gray-200 leading-relaxed">
+            Serving as Business Developer, building partnerships, onboarding users, expanding market reach, and creating growth opportunities to strengthen the project’s ecosystem.
+            </p>
+          </div>
           {/* Metadawgs */}
           <div className="bg-gradient-to-r from-black/70 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-gray-400 transition-all duration-300">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
