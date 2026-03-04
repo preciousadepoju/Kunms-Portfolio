@@ -68,6 +68,7 @@ function ExperienceSection() {
         className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent z-0 pointer-events-none"
         animate={{ opacity: [0.2, 0.5, 0.2] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        style={{ willChange: 'opacity' }}
       />
       
       <div className="max-w-4xl mx-auto w-full relative z-10">
@@ -127,8 +128,9 @@ function ExperienceSection() {
                 >
                   <motion.div 
                     className="absolute inset-0 bg-cyan-400 rounded-full blur-md"
-                    animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
+                    animate={{ opacity: [0.5, 0.2, 0.5] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: index * 0.2 }}
+                    style={{ willChange: 'opacity' }}
                   />
                   <div className="w-3 h-3 bg-slate-900 rounded-full"></div>
                 </motion.div>

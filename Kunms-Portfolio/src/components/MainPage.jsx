@@ -17,21 +17,9 @@ function MainPage() {
     <div className="min-h-screen w-full overflow-x-hidden bg-slate-950 text-slate-100 selection:bg-cyan-500/30">
       {/* Animated Background gradients/blobs */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-        <motion.div 
-          animate={{ scale: [1, 1.2, 1], x: [0, 70, 0], y: [0, -50, 0], rotate: [0, 90, 0] }}
-          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-cyan-900/30 blur-[120px]"
-        ></motion.div>
-        <motion.div 
-          animate={{ scale: [1, 1.4, 1], x: [0, -80, 0], y: [0, 80, 0], rotate: [0, -90, 0] }}
-          transition={{ duration: 25, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute top-[30%] right-[-10%] w-[35vw] h-[35vw] rounded-full bg-purple-900/30 blur-[120px]"
-        ></motion.div>
-        <motion.div 
-          animate={{ scale: [1, 1.3, 1], x: [0, 50, 0], y: [0, 60, 0] }}
-          transition={{ duration: 22, repeat: Infinity, ease: "easeInOut", delay: 5 }}
-          className="absolute bottom-[-10%] left-[20%] w-[45vw] h-[45vw] rounded-full bg-blue-900/30 blur-[120px]"
-        ></motion.div>
+        <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-cyan-900/20 blur-[120px]"></div>
+        <div className="absolute top-[30%] right-[-10%] w-[35vw] h-[35vw] rounded-full bg-purple-900/20 blur-[120px]"></div>
+        <div className="absolute bottom-[-10%] left-[20%] w-[45vw] h-[45vw] rounded-full bg-blue-900/20 blur-[120px]"></div>
       </div>
 
       {/* Content wrapper with z-index to sit above background blobs */}

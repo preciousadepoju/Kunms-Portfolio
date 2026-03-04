@@ -34,8 +34,9 @@ function AboutSection() {
       {/* Dynamic Background Element */}
       <motion.div 
         className="absolute top-1/2 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900/10 via-transparent to-transparent -translate-y-1/2 z-0 pointer-events-none"
-        animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
+        animate={{ opacity: [0.3, 0.6, 0.3] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        style={{ willChange: 'opacity' }}
       />
       
       <div className="max-w-7xl mx-auto relative z-10">
@@ -105,7 +106,7 @@ function AboutSection() {
             className="bg-slate-900/60 backdrop-blur-2xl p-10 rounded-3xl border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative overflow-hidden group transform-gpu"
           >
             {/* Animated rotating gradient border background inside */}
-            <div className="absolute inset-[-50%] bg-[conic-gradient(from_0deg,transparent_0_340deg,rgba(34,211,238,0.5)_360deg)] animate-[spin_4s_linear_infinite] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+            <div className="absolute inset-[-50%] bg-[conic-gradient(from_0deg,transparent_0_340deg,rgba(34,211,238,0.5)_360deg)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
             
             <div className="absolute inset-[2px] bg-slate-900 rounded-[22px] z-10 backdrop-blur-3xl"></div>
             <div className="absolute top-0 right-0 w-48 h-48 bg-cyan-500/20 rounded-full blur-3xl -mr-20 -mt-20 transition-all duration-700 group-hover:bg-cyan-400/40 z-10"></div>

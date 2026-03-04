@@ -36,8 +36,8 @@ function HeroSection() {
           {/* Background glowing flare behind text */}
           <motion.div 
             className="absolute -top-20 -left-20 lg:-left-40 lg:-top-40 w-96 h-96 bg-cyan-500/20 rounded-full blur-[100px] pointer-events-none"
-            style={{ zIndex: 0 }}
-            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            style={{ zIndex: 0, willChange: 'opacity' }}
+            animate={{ opacity: [0.3, 0.5, 0.3] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           />
 
@@ -100,14 +100,16 @@ function HeroSection() {
           >
             <motion.div 
               className="relative"
-              animate={{ y: [0, -20, 0] }}
+              animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              style={{ willChange: 'transform' }}
             >
               {/* Rotating glowing border back */}
               <motion.div 
                 className="absolute -inset-4 bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-500 rounded-full blur-xl opacity-60"
-                animate={{ rotate: 360, scale: [1, 1.1, 1] }}
-                transition={{ rotate: { duration: 8, repeat: Infinity, ease: "linear" }, scale: { duration: 4, repeat: Infinity, ease: "easeInOut" } }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+                style={{ willChange: 'transform' }}
               />
               <img
                 src={kunmsImg}
@@ -119,6 +121,7 @@ function HeroSection() {
                 className="absolute inset-0 rounded-full border-t-2 border-l-2 border-cyan-300 mix-blend-overlay z-20"
                 animate={{ rotate: -360 }}
                 transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+                style={{ willChange: 'transform' }}
               />
             </motion.div>
           </motion.div>

@@ -27,8 +27,9 @@ function ContactSection() {
       {/* Background massive glowing flare */}
       <motion.div 
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80vw] h-[40vw] bg-[conic-gradient(at_top_center,_var(--tw-gradient-stops))] from-cyan-900/40 via-blue-900/10 to-transparent blur-3xl -z-10 pointer-events-none"
-        animate={{ opacity: [0.3, 0.7, 0.3], scale: [1, 1.1, 1] }}
+        animate={{ opacity: [0.3, 0.7, 0.3] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        style={{ willChange: 'opacity' }}
       />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -42,8 +43,9 @@ function ContactSection() {
         >
           <motion.div 
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/20 blur-3xl rounded-full -z-10"
-            animate={{ scale: [1, 1.5, 1], opacity: [0.5, 1, 0.5] }}
+            animate={{ opacity: [0.5, 1, 0.5] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            style={{ willChange: 'opacity' }}
           />
 
           <h2 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient drop-shadow-[0_10px_20px_rgba(8,145,178,0.5)]">
@@ -67,7 +69,7 @@ function ContactSection() {
             className="bg-slate-900/60 backdrop-blur-3xl p-8 sm:p-14 rounded-[3rem] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden group perspective-[1000px]"
           >
             {/* Swirling background inside card */}
-            <div className="absolute inset-[-50%] bg-[conic-gradient(from_180deg,transparent_0_340deg,rgba(59,130,246,0.3)_360deg)] animate-[spin_6s_linear_infinite] pointer-events-none"></div>
+            <div className="absolute inset-[-50%] bg-[conic-gradient(from_180deg,transparent_0_340deg,rgba(59,130,246,0.3)_360deg)] pointer-events-none"></div>
             <div className="absolute inset-1 bg-slate-950/90 rounded-[3rem] z-0"></div>
 
             <div className="absolute top-0 left-0 w-64 h-64 bg-cyan-500/20 rounded-full blur-[80px] -ml-24 -mt-24 transition-all duration-700 group-hover:bg-cyan-400/30 group-hover:scale-150 z-0"></div>
