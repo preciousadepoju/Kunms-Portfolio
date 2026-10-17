@@ -13,7 +13,7 @@ function Marquee() {
           {items.map((name, i) => (
             <span key={i} className="flex items-center whitespace-nowrap">
               <span className="px-8 font-serif text-3xl text-cream/80 sm:text-4xl">{name}</span>
-              <span className="text-lime">✦</span>
+              <span className="text-accent">✦</span>
             </span>
           ))}
         </div>

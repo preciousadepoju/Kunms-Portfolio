@@ -16,7 +16,7 @@ function AboutSection() {
 
         <Reveal as="h2" className="mt-10 max-w-5xl text-[clamp(1.9rem,4.2vw,3.75rem)] font-medium leading-[1.1] tracking-[-0.03em]">
           I believe blockchain can reshape financial systems and{' '}
-          <span className="font-serif italic text-lime">empower individuals</span> across Africa and beyond — and
+          <span className="font-serif italic text-accent">empower individuals</span> across Africa and beyond — and
           I build the partnerships that <span className="text-muted">make that happen.</span>
         </Reveal>
 
@@ -51,7 +51,7 @@ function AboutSection() {
                   <div key={l.name}>
                     <div className="flex items-baseline justify-between">
                       <span className="font-serif text-2xl">{l.name}</span>
-                      <span className="font-mono text-xs uppercase tracking-wider text-lime">{l.level}</span>
+                      <span className="font-mono text-xs uppercase tracking-wider text-accent">{l.level}</span>
                     </div>
                     <div className="mt-3 h-px w-full bg-line">
                       <motion.div

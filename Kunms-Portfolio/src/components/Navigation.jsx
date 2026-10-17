@@ -37,7 +37,7 @@ function Navigation() {
   return (
     <>
       <motion.div
-        className="fixed inset-x-0 top-0 z-[70] h-[2px] origin-left bg-lime"
+        className="fixed inset-x-0 top-0 z-[70] h-[2px] origin-left bg-accent"
         style={{ scaleX: progress }}
       />
 
@@ -55,7 +55,7 @@ function Navigation() {
           }`}
         >
           <a href="#top" className="font-serif text-2xl leading-none tracking-tight" onClick={() => setOpen(false)}>
-            KUNMS<span className="text-lime">.</span>
+            KUNMS<span className="text-accent">.</span>
           </a>
 
           <ul className="hidden items-center gap-1 md:flex">
@@ -83,7 +83,7 @@ function Navigation() {
           <div className="flex items-center gap-2">
             <a
               href="#contact"
-              className="group hidden items-center gap-1.5 rounded-full bg-lime px-4 py-2 text-sm font-medium text-ink transition-transform hover:scale-[1.03] sm:flex"
+              className="group hidden items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-medium text-ink transition-transform hover:scale-[1.03] sm:flex"
             >
               Let's talk
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -123,7 +123,7 @@ function Navigation() {
                     onClick={() => setOpen(false)}
                     className="flex items-baseline gap-4 border-b border-line py-4 font-serif text-5xl"
                   >
-                    <span className="font-mono text-xs text-lime">0{i + 1}</span>
+                    <span className="font-mono text-xs text-accent">0{i + 1}</span>
                     {label}
                   </a>
                 </motion.li>

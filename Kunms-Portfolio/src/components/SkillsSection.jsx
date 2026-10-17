@@ -65,7 +65,7 @@ function SkillsSection() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.9, ease, delay: (i % 3) * 0.08 }}
               className={`group relative flex min-h-64 flex-col justify-between overflow-hidden rounded-3xl border p-7 transition-colors duration-500 sm:p-8 ${span} ${
-                featured ? 'border-lime/30 bg-lime text-ink' : 'border-line bg-ink-2 hover:border-cream/20'
+                featured ? 'border-accent/30 bg-accent text-ink' : 'border-line bg-ink-2 hover:border-cream/20'
               }`}
             >
               {!featured && (
@@ -78,7 +78,7 @@ function SkillsSection() {
                     featured ? 'border-ink/15 bg-ink/5' : 'border-line bg-ink-3'
                   }`}
                 >
-                  <Icon className={`h-5 w-5 ${featured ? 'text-ink' : 'text-lime'}`} strokeWidth={1.75} />
+                  <Icon className={`h-5 w-5 ${featured ? 'text-ink' : 'text-accent'}`} strokeWidth={1.75} />
                 </span>
                 <span className={`font-mono text-xs ${featured ? 'text-ink/50' : 'text-muted'}`}>
                   {String(i + 1).padStart(2, '0')}

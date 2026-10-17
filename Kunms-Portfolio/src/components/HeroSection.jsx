@@ -6,7 +6,7 @@ import { ease } from '../motion'
 
 const lines = [
   <>Growing the</>,
-  <><em className="font-serif italic text-lime">borderless</em> crypto</>,
+  <><em className="font-serif italic text-accent">borderless</em> crypto</>,
   <>economy.</>,
 ]
 
@@ -63,8 +63,8 @@ function PortraitCard() {
         className="absolute -left-4 top-10 hidden items-center gap-2 rounded-full border border-line bg-ink-2/90 px-4 py-2 text-xs backdrop-blur-md sm:flex lg:-left-12"
       >
         <span className="relative flex h-2 w-2">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime opacity-70" />
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-lime" />
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-70" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
         </span>
         Open to partnerships
       </motion.div>
@@ -76,7 +76,7 @@ function HeroSection() {
   return (
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden px-5 pb-16 pt-32 sm:px-8">
       <div className="grid-bg pointer-events-none absolute inset-0" />
-      <div className="pointer-events-none absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full bg-lime/[0.07] blur-[140px]" />
+      <div className="pointer-events-none absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full bg-accent/[0.07] blur-[140px]" />
 
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[1.4fr_1fr]">
         <div>
@@ -86,7 +86,7 @@ function HeroSection() {
             transition={{ duration: 1, delay: 0.3 }}
             className="mb-8 flex flex-wrap items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-muted"
           >
-            <span className="text-lime">●</span>
+            <span className="text-accent">●</span>
             Business Developer
             <span className="text-line">/</span>
             Marketer
@@ -127,7 +127,7 @@ function HeroSection() {
           >
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-cream px-6 py-3.5 font-medium text-ink transition-colors hover:bg-lime"
+              className="group inline-flex items-center gap-2 rounded-full bg-cream px-6 py-3.5 font-medium text-ink transition-colors hover:bg-accent"
             >
               Start a conversation
               <ArrowDownRight className="h-4 w-4 transition-transform group-hover:rotate-[-45deg]" />

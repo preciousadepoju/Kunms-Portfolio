@@ -31,7 +31,7 @@ function ExperienceSection() {
               className="group relative isolate border-b border-line"
             >
               {/* Hover fill */}
-              <span className="absolute inset-0 -z-10 origin-bottom scale-y-0 bg-lime transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:group-hover:scale-y-100" />
+              <span className="absolute inset-0 -z-10 origin-bottom scale-y-0 bg-accent transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:group-hover:scale-y-100" />
 
               <div className="grid gap-3 px-1 py-8 transition-colors duration-300 md:grid-cols-12 md:items-center md:gap-6 md:px-4 md:group-hover:text-ink">
                 <span className="font-mono text-xs text-muted transition-colors md:col-span-1 md:group-hover:text-ink/60">

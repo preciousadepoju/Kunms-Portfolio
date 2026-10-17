@@ -8,7 +8,7 @@ function Footer() {
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
             <p className="font-serif text-3xl">
-              KUNMS<span className="text-lime">.</span>
+              KUNMS<span className="text-accent">.</span>
             </p>
             <p className="mt-3 max-w-sm text-muted">
               Building the future of decentralized finance, one partnership at a time.
@@ -38,7 +38,7 @@ function Footer() {
             <a
               href="#top"
               aria-label="Back to top"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-line transition-colors hover:border-lime hover:bg-lime hover:text-ink"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-line transition-colors hover:border-accent hover:bg-accent hover:text-ink"
             >
               <ArrowUp className="h-4 w-4" />
             </a>

@@ -19,7 +19,7 @@ export function Reveal({ children, delay = 0, y = 32, className = '', as = 'div'
 export function SectionLabel({ index, children }) {
   return (
     <Reveal className="flex items-center gap-4 font-mono text-xs uppercase tracking-[0.2em] text-muted">
-      <span className="text-lime">({index})</span>
+      <span className="text-accent">({index})</span>
       <span className="h-px w-12 bg-line" />
       <span>{children}</span>
     </Reveal>
