@@ -1,35 +1,62 @@
+import { ArrowUp } from 'lucide-react'
+import { EMAIL, X_URL, navLinks } from '../data'
+
 function Footer() {
   return (
-    <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800/50 bg-slate-950/50 relative z-10 w-full max-w-full backdrop-blur-md">
-      <div className="max-w-7xl mx-auto text-center">
-        <div className="text-2xl font-black bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4 inline-block">
-          Kunms
+    <footer className="relative overflow-hidden border-t border-line px-5 pt-16 sm:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-10 md:grid-cols-12">
+          <div className="md:col-span-5">
+            <p className="font-serif text-3xl">
+              KUNMS<span className="text-lime">.</span>
+            </p>
+            <p className="mt-3 max-w-sm text-muted">
+              Building the future of decentralized finance, one partnership at a time.
+            </p>
+          </div>
+
+          <nav className="md:col-span-3" aria-label="Footer">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Navigate</p>
+            <ul className="mt-4 space-y-2">
+              {navLinks.map(({ id, label }) => (
+                <li key={id}>
+                  <a href={`#${id}`} className="link-underline">{label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="md:col-span-3">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Connect</p>
+            <ul className="mt-4 space-y-2">
+              <li><a href={X_URL} target="_blank" rel="noopener noreferrer" className="link-underline">X / Twitter</a></li>
+              <li><a href={`mailto:${EMAIL}`} className="link-underline">Email</a></li>
+            </ul>
+          </div>
+
+          <div className="md:col-span-1 md:flex md:justify-end">
+            <a
+              href="#top"
+              aria-label="Back to top"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-line transition-colors hover:border-lime hover:bg-lime hover:text-ink"
+            >
+              <ArrowUp className="h-4 w-4" />
+            </a>
+          </div>
         </div>
-        <p className="text-slate-400 mb-6 max-w-md mx-auto">
-          Building the future of decentralized finance, one partnership at a time.
-        </p>
-        <div className="flex justify-center space-x-6">
-          <a
-            href="https://x.com/IamKunms"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-slate-400 hover:text-cyan-400 font-medium transition-colors"
-          >
-            Follow on X
-          </a>
-          <a
-            href="mailto:akinkunmiakanmu40@gmail.com"
-            className="text-slate-400 hover:text-cyan-400 font-medium transition-colors"
-          >
-            Email
-          </a>
-        </div>
-        <div className="mt-8 pt-8 border-t border-slate-800/50">
-          <p className="text-slate-500 text-sm">
-            © 2025 Kunms. Building bridges in the Web3 ecosystem.
-          </p>
+
+        <div className="mt-16 flex flex-col justify-between gap-2 border-t border-line py-6 font-mono text-xs uppercase tracking-[0.15em] text-muted sm:flex-row">
+          <span>© {new Date().getFullYear()} KUNMS</span>
+          <span>Building bridges in the Web3 ecosystem</span>
         </div>
       </div>
+
+      <p
+        aria-hidden
+        className="text-outline pointer-events-none select-none text-center font-serif text-[20vw] leading-[0.75] tracking-[-0.04em]"
+      >
+        KUNMS
+      </p>
     </footer>
   )
 }
